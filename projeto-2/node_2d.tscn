@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://cjli0v4w57wix"]
+[gd_scene load_steps=3 format=3 uid="uid://dajg7rf026krv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y32ns"]
 size = Vector2(66, 66)
@@ -93,6 +93,7 @@ offset_left = -32.0
 offset_top = -32.0
 offset_right = 32.0
 offset_bottom = 32.0
+color = Color(0.201527, 0.201527, 0.201527, 1)
 
 [node name="RigidBody2D14" type="RigidBody2D" parent="."]
 position = Vector2(447, 466)
@@ -102,6 +103,32 @@ position = Vector2(522, 249)
 shape = SubResource("RectangleShape2D_y32ns")
 
 [node name="ColorRect" type="ColorRect" parent="RigidBody2D14/CollisionShape2D"]
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+
+[node name="RigidBody2D15" type="RigidBody2D" parent="."]
+position = Vector2(700, 478)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D15"]
+position = Vector2(522, 249)
+shape = SubResource("RectangleShape2D_y32ns")
+
+[node name="ColorRect" type="ColorRect" parent="RigidBody2D15/CollisionShape2D"]
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+
+[node name="RigidBody2D16" type="RigidBody2D" parent="."]
+position = Vector2(700, 478)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D16"]
+position = Vector2(522, 249)
+shape = SubResource("RectangleShape2D_y32ns")
+
+[node name="ColorRect" type="ColorRect" parent="RigidBody2D16/CollisionShape2D"]
 offset_left = -32.0
 offset_top = -32.0
 offset_right = 32.0
@@ -132,6 +159,7 @@ offset_left = -32.0
 offset_top = -32.0
 offset_right = 32.0
 offset_bottom = 32.0
+color = Color(0, 0.121569, 0.345098, 1)
 
 [node name="RigidBody2D8" type="RigidBody2D" parent="."]
 position = Vector2(-438, 479)
@@ -158,6 +186,7 @@ offset_left = -32.0
 offset_top = -32.0
 offset_right = 32.0
 offset_bottom = 32.0
+color = Color(1, 0.203922, 1, 1)
 
 [node name="RigidBody2D5" type="RigidBody2D" parent="."]
 position = Vector2(-97, -282)
@@ -171,6 +200,7 @@ offset_left = -32.0
 offset_top = -32.0
 offset_right = 32.0
 offset_bottom = 32.0
+color = Color(1, 0.388235, 0.184314, 1)
 
 [node name="RigidBody2D3" type="RigidBody2D" parent="."]
 position = Vector2(-10, 12)
@@ -184,6 +214,7 @@ offset_left = -32.0
 offset_top = -32.0
 offset_right = 32.0
 offset_bottom = 32.0
+color = Color(0.537255, 1, 1, 1)
 
 [node name="RigidBody2D2" type="RigidBody2D" parent="."]
 position = Vector2(207, -98)

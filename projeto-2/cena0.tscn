@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=3 uid="uid://2bq556krihw6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bw3dn"]
+size = Vector2(85, 71)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0ys1u"]
+radius = 22.0
+height = 50.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -2.0
+offset_top = 1.0
+offset_right = 1148.0
+offset_bottom = 648.0
+color = Color(0.372259, 9.55395e-05, 0.372823, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(451, 261)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(30.5, 22.5)
+shape = SubResource("RectangleShape2D_bw3dn")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D"]
+offset_left = -43.0
+offset_top = -35.0
+offset_right = 41.0
+offset_bottom = 41.0
+color = Color(0.341176, 1, 1, 1)
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(698, 227)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(30.5, 22.5)
+shape = SubResource("RectangleShape2D_bw3dn")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D2/CollisionShape2D"]
+offset_left = -43.0
+offset_top = -35.0
+offset_right = 41.0
+offset_bottom = 41.0
+color = Color(0.341176, 1, 1, 1)
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(124, 485)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(32.5, 19.5)
+shape = SubResource("RectangleShape2D_bw3dn")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D3/CollisionShape2D"]
+offset_left = -43.0
+offset_top = -35.0
+offset_right = 41.0
+offset_bottom = 41.0
+color = Color(0.341176, 1, 1, 1)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(66, 282)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(90, 30)
+shape = SubResource("CapsuleShape2D_0ys1u")
+
+[node name="ColorRect" type="ColorRect" parent="RigidBody2D/CollisionShape2D"]
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 19.0
+offset_bottom = 19.0

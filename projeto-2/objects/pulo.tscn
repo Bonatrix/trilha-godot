@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://wpt3jsxrrmcn"]
+[gd_scene load_steps=4 format=3 uid="uid://wpt3jsxrrmcn"]
 
 [ext_resource type="PackedScene" uid="uid://cvocrc6yrdlwv" path="res://objects/caixa.tscn" id="1_cpiol"]
+[ext_resource type="Script" uid="uid://cd4slb8da4i8f" path="res://manager/node.gd" id="2_61fsq"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_cpiol"]
 bounce = 0.66
@@ -8,15 +9,18 @@ bounce = 0.66
 [node name="RigidBody2D3" instance=ExtResource("1_cpiol")]
 physics_material_override = SubResource("PhysicsMaterial_cpiol")
 
+[node name="Node" type="Node" parent="." index="0"]
+script = ExtResource("2_61fsq")
+
 [node name="ColorRect" parent="CollisionShape2D" index="0"]
 color = Color(0.537255, 0.454902, 1, 1)
 
-[node name="RigidBody2D3" parent="." index="1" instance=ExtResource("1_cpiol")]
+[node name="RigidBody2D3" parent="." index="2" instance=ExtResource("1_cpiol")]
 position = Vector2(349, -46)
 
-[node name="RigidBody2D4" parent="." index="2" instance=ExtResource("1_cpiol")]
+[node name="RigidBody2D4" parent="." index="3" instance=ExtResource("1_cpiol")]
 position = Vector2(372, 167)
 
-[node name="RigidBody2D5" parent="." index="3" instance=ExtResource("1_cpiol")]
+[node name="RigidBody2D5" parent="." index="4" instance=ExtResource("1_cpiol")]
 position = Vector2(-2, -1)
 mass = 895.0
